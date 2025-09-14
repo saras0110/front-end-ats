@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Applicant Dashboard</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <div class="dashboard">
+    <h2>Applicant Dashboard</h2>
+    <p>Browse jobs and apply by uploading your resume.</p>
+    <form method="POST" action="https://YOUR-BACKEND-URL.onrender.com/upload_resume" enctype="multipart/form-data">
+      <input type="file" name="resume" required>
+      <button type="submit">Upload Resume</button>
+    </form>
+    <div id="available-jobs"></div>
+  </div>
+</body>
+</html>
